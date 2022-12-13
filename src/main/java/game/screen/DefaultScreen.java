@@ -23,7 +23,6 @@ public class DefaultScreen extends Screen {
 	
 	@Override
 	public void update() {
-		
 	}
 
 	@Override

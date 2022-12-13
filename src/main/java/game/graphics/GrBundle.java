@@ -21,7 +21,7 @@ public final class GrBundle {
 	 * The main drawing tool of this game<br>
 	 * <br>
 	 * 注：已经开始(begin)批量绘图<br>
-	 * tips: Batch drawing has already started;<br>
+	 * notes: Batch drawing has already started;<br>
 	 * <br>
 	 * <code>
 	 * batch.begin();

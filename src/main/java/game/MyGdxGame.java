@@ -24,6 +24,7 @@ public class MyGdxGame implements ApplicationListener {
 
 	@Override
 	public void create() {
+		
 		GrBundle.batch = new SpriteBatch();
 		GrBundle.font = new BitmapFont();
 		GrBundle.font.setColor(Color.WHITE);
@@ -33,7 +34,7 @@ public class MyGdxGame implements ApplicationListener {
 
 	@Override
 	public void resize(int width, int height) {
-
+		ScreenManager.instance.resize(width, height);
 	}
 
 	@Override
@@ -52,16 +53,17 @@ public class MyGdxGame implements ApplicationListener {
 
 	@Override
 	public void pause() {
-
+		ScreenManager.instance.pause();
 	}
 
 	@Override
 	public void resume() {
-
+		ScreenManager.instance.resume();
 	}
 
 	@Override
 	public void dispose() {
+		ScreenManager.instance.dispose();
 		GrBundle.batch.dispose();
 		GrBundle.font.dispose();
 	}
