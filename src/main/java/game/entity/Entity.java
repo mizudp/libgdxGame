@@ -5,8 +5,7 @@ import java.util.Objects;
 import com.badlogic.gdx.physics.box2d.Body;
 
 /**
- * 实体基类<br>
- * Entity's base class
+ * 实体基类
  * 
  * @author mizudp
  * @date 2022年11月25日
@@ -15,16 +14,24 @@ import com.badlogic.gdx.physics.box2d.Body;
 public abstract class Entity {
 
 	/**body为了改变一些属性封装的*/
-	private Body body;
-	/**实体的唯一id*/
-	private int id;
+	protected Body body;
 	/**当前生命值*/
-	private int health;
+	protected int health;
 	/**最大生命值*/
-	private int maxHealth;
+	protected int maxHealth;
+	/**实体的唯一id*/
+	public int id;
+	/**实体类型*/
+	public Type type;
+	
+	public enum Type{
+		PLAYER
+	}
 
-	protected Entity(int id, Body body) {
-
+	protected Entity(Body body, int id, int maxHealth) {
+		this.body = body;
+		this.id = id;
+		this.maxHealth = maxHealth;
 	}
 
 	/**

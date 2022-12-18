@@ -5,8 +5,7 @@ import com.badlogic.gdx.backends.lwjgl.LwjglApplication;
 import com.badlogic.gdx.backends.lwjgl.LwjglApplicationConfiguration;
 
 /**
- * 桌面启动程序<br>
- * Desktop started program
+ * 桌面启动程序
  * 
  * @author mizudp
  * @date 2022年11月25日
@@ -15,8 +14,7 @@ import com.badlogic.gdx.backends.lwjgl.LwjglApplicationConfiguration;
 public class Desktop {
 
 	/**
-	 * 这个只是拿来玩的<br>
-	 * Just for kidding
+	 * 这个只是拿来玩的
 	 */
 	private static String[] text = { "never gonna give you up", "never gonna let you down", "never gonna run around",
 			"114514" };

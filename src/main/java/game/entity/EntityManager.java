@@ -3,6 +3,10 @@
  */
 package game.entity;
 
+import com.badlogic.gdx.physics.box2d.BodyDef;
+import com.badlogic.gdx.physics.box2d.FixtureDef;
+import com.badlogic.gdx.utils.ObjectMap;
+
 /**
  * 实体管理类
  * 
@@ -12,23 +16,34 @@ package game.entity;
  * 
  */
 public class EntityManager {
-
 	private static final EntityManager instance;
+	
+	ObjectMap<Integer, Entity> entityMap;
+	public BodyDef def;
+	public FixtureDef fDef;
 
 	static {
 		instance = new EntityManager();
 	}
 
 	private EntityManager() {
-
+		def = new BodyDef();
+		fDef= new FixtureDef();
 	}
 
 	/**
 	 * 获取当前类的实例
-	 * 
-	 * @return the instance
 	 */
 	public static EntityManager getInstance() {
 		return instance;
+	}
+	
+	public void update() {
+		
+	}
+	
+	//TODO
+	public Entity creatEntity(int maxHealth) {
+		return null;
 	}
 }

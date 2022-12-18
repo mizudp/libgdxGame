@@ -7,7 +7,6 @@ import com.badlogic.gdx.utils.Disposable;
 
 /**
  * 场景的管理类<br>
- * The manager of screens
  * 
  * @author mizudp
  * @date 2022年11月25日
@@ -70,7 +69,6 @@ public final class ScreenManager implements Disposable {
 
 	/**
 	 * 根据id获得场景实例<br>
-	 * According to specific id to get appointing screen instance
 	 * 
 	 * @param id
 	 * @return 指定场景(Specific screen)

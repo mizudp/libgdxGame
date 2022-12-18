@@ -12,8 +12,7 @@ import game.graphics.GrBundle;
 import game.screen.ScreenManager;
 
 /**
- * 游戏入口<br>
- * The entrance of this game
+ * 游戏入口
  * 
  * @author mizudp
  * @date 2022年11月25日

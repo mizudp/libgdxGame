@@ -6,8 +6,7 @@ package game.screen;
 import game.graphics.GrBundle;
 
 /**
- * 默认场景用于显示异常或不正常状态<br>
- * Default screen is used for error or other unknown state
+ * 默认场景用于显示异常或不正常状态
  * 
  * @author mizudp
  * @date 2022年11月25日

@@ -33,10 +33,11 @@ public class GameScreen extends Screen {
 	public void create() {
 		world = new World(new Vector2(0, -9.8f), true);
 		box2dCamera = new OrthographicCamera();
-		box2dCamera.setToOrtho(false, Gdx.graphics.getWidth()/100, Gdx.graphics.getHeight()/1000);
+		box2dCamera.setToOrtho(false, Gdx.graphics.getWidth()/100, Gdx.graphics.getHeight()/100);
 		renderer = new Box2DDebugRenderer();
 	}
 
+	
 	@Override
 	public void update() {
 		world.step(1/60.0f, 6, 4);
